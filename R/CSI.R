@@ -16,5 +16,6 @@ csi_v2 <- function(array_1,array_2,count_bands){
   df_out$ln_Old_by_New <- as.numeric(log(as.numeric(df_out$Array1)/as.numeric(df_out$Array2)))
   df_out$Index <- as.numeric(df_out$diff_Array1_Array2)*as.numeric(df_out$ln_Old_by_New)
   df_out$CSI <- sum(df_out$Index, na.rm = TRUE)
-  return(df_out)
+  #return(df_out)
+  return(print("lol"))
 }
